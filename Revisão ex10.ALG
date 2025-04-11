@@ -9,7 +9,7 @@ Var
    feitico: inteiro
    area_cir, area_retan: real
    raio: real
-
+   lado1,lado2:real
 
 Inicio
    // Seção de Comandos, procedimento, funções, operadores, etc...
@@ -21,14 +21,29 @@ Inicio
    leia(feitico)
 
    se(feitico = 1) então
+      escreval
       escreval("Digite o raio do círculo que deseja calcular")
       leia(raio)
       area_cir <-  3.14 * raio * raio
       escreval("A area do círculo é de ",area_cir)
 
-      fimse
-      
-      se(feitico = 2) entao
+   fimse
+
+   se(feitico = 2) entao
       escreval
+      escreval("Digite o primeiro lado do retangulo")
+      leia(lado1)
+      escreval
+      escreval("Digite o segundo lado do retangulo")
+      leia(lado2)
+      area_retan <- lado1 * lado2
+
+      escreval
+      escreval("A área do retangulo é de ",area_retan)
+   fimse
+
+   se(feitico = 3) entao
+fimalgoritmo
+fimse
 
 Fimalgoritmo
